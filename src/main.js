@@ -1,18 +1,16 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import './plugins/vuetify'
-import Vuetify from 'vuetify'
-
 import App from './App'
 import router from './router'
+
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 import VueFire from 'vuefire'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
-Vue.use(VueFire)
+
 Vue.use(Vuetify)
-import 'vuetify/dist/vuetify.min.css'
+Vue.use(VueFire)
 
 firebase.initializeApp({
   apiKey: 'AIzaSyBQb91bPAJhS1IPoSbRevPjiH6W1HFx76o',

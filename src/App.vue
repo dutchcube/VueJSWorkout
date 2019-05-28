@@ -1,22 +1,18 @@
 <template>
-  <div id="app" class="content">
-    <router-view/>
-  </div>
+  <v-app>
+    <Navigation />
+  </v-app>
 </template>
 
 <script>
-  export default {
-    name: 'App'
-  }
+import Navigation from './components/Navigation'
+
+export default {
+  name: 'App',
+  components: {Navigation}
+}
 </script>
 
 <style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin: 60px 10vw;
-  }
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons';
 </style>

@@ -1,14 +1,14 @@
 {
-  "name": "dc-covers",
+  "name": "workout-app",
   "version": "1.0.0",
-  "private": true,
   "description": "A Vue.js project",
-  "author": "rajatk16 <rajat.k16@gmail.com>",
+  "author": "Leon",
+  "private": true,
   "scripts": {
-    "build": "node build/build.js",
-    "lint": "eslint --ext .js,.vue src",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "lint": "eslint --ext .js,.vue src",
+    "build": "node build/build.js"
   },
   "dependencies": {
     "firebase": "^4.13.1",
@@ -32,13 +32,11 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
-    "eslint-config-prettier": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.0.0",
@@ -56,27 +54,23 @@
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
-    "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
-    "vuetify-loader": "^1.0.5",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
-  }
+  ]
 }
